@@ -29,7 +29,7 @@
             <li class="nav-item"><a class="nav-link" href="#logi-a">LOGI-A</a></li>
           </ul>
           <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search" id="search-form"><label class="visually-hidden" for="global-search">Pesquisar na UC7</label><input class="form-control form-control-sm" id="global-search" type="search" placeholder="Pesquisar" aria-label="Pesquisar na UC7"><button class="btn btn-orange btn-sm ms-2" type="submit" aria-label="Pesquisar"><i class="bi bi-search"></i></button></form>
-          <div class="access-tools ms-lg-3 mt-3 mt-lg-0"><button class="btn btn-outline-light btn-sm" data-action="font-up" aria-label="Aumentar texto" title="Aumentar texto">A+</button><button class="btn btn-outline-light btn-sm" data-action="contrast" aria-label="Ativar alto contraste" aria-pressed="false" title="Ativar alto contraste"><i class="bi bi-circle-half"></i></button></div>
+          <div class="access-tools ms-lg-3 mt-3 mt-lg-0"><button class="btn btn-outline-light btn-sm" data-action="read-page" aria-label="Ler esta página" aria-pressed="false" title="Ler esta página"><i class="bi bi-volume-up"></i><span class="access-label">Ler página</span></button><button class="btn btn-outline-light btn-sm" data-action="stop-reading" aria-label="Parar leitura" title="Parar leitura"><i class="bi bi-stop-fill"></i></button><button class="btn btn-outline-light btn-sm" data-action="font-up" aria-label="Aumentar texto" title="Aumentar texto">A+</button><button class="btn btn-outline-light btn-sm" data-action="contrast" aria-label="Ativar alto contraste" aria-pressed="false" title="Ativar alto contraste"><i class="bi bi-circle-half"></i></button><span id="read-status" class="visually-hidden" aria-live="polite"></span></div>
         </div>
       </div>
     </div>
@@ -41,5 +41,16 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
   <script src="assets/js/data.js"></script>
   <script src="assets/js/app.js"></script>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      if (window.VLibras && window.VLibras.Widget) {
+        new window.VLibras.Widget({
+          rootPath: 'https://vlibras.gov.br/app',
+          position: 'R'
+        });
+      }
+    });
+  </script>
 </body>
 </html>

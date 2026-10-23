@@ -17,6 +17,10 @@
   .site-nav .nav-link{font-size:.76rem;padding-left:.22rem;padding-right:.22rem}
   #search-form{flex-basis:132px}
 }
+@media(min-width:992px) and (max-width:1240px){
+  .access-label{display:none}
+  .site-nav .access-tools .btn{padding-left:.42rem;padding-right:.42rem}
+}
 @media(max-width:991.98px){
   #search-form{width:100%;max-width:24rem}
   .access-tools{margin-left:0!important}

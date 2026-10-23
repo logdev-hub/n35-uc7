@@ -49,3 +49,11 @@ Foram estruturadas 15 fórmulas reutilizáveis: margem de contribuição, ponto 
 - Links dos PDFs e estrutura de documentos conferidos no workspace.
 - Calculadoras revisadas para divisores inválidos, taxas, percentuais, valores negativos e formatação monetária.
 - Teste manual recomendado antes da publicação: percorrer todas as 21 rotas de case, testar viewport de 320 px, limpar localStorage e abrir a aplicação a partir de um subdiretório GitHub Pages.
+
+## Acessibilidade em Libras
+
+O Widget oficial do VLibras foi integrado no `index.html`, que é compartilhado por todas as rotas da SPA. A configuração usa a posição inicial à direita e o caminho oficial `https://vlibras.gov.br/app`. O carregamento depende de conexão externa; se o site for publicado com CSP, será necessário liberar os domínios indicados na documentação oficial do VLibras.
+
+## Leitura em voz alta
+
+O botão global `Ler página` foi implementado com `SpeechSynthesis`, lê somente títulos, textos, instruções, fórmulas e resultados do conteúdo principal de `#app`. Menus, badges, fontes, botões e campos de resposta são ignorados. A fila usa velocidade 0,9, converte símbolos como `×`, `÷`, `%` e `R$` para palavras e cria pausas entre blocos e seções. O recurso inclui pausa, continuação, parada e interrupção automática quando o estudante muda de rota.

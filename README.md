@@ -42,3 +42,11 @@ O progresso, respostas, favoritos e última rota ficam somente no `localStorage`
 ## LOGI-A
 
 O acesso abre a URL oficial do agente em nova aba e oferece prompts contextualizados. Não existe API simulada nem integração automática. É necessário login com conta educacional Microsoft autorizada.
+
+## VLibras
+
+O Widget oficial do VLibras é carregado no `index.html`, que funciona como shell comum de todas as rotas da aplicação. Por isso, o recurso fica disponível na Home, conceitos, cases, fórmulas, calculadoras, glossário, biblioteca e LOGI-A. A integração usa o serviço oficial em `https://vlibras.gov.br/app` e depende de conexão com a internet para carregar o widget.
+
+## Leitura em voz alta
+
+O botão `Ler página` usa a API nativa `SpeechSynthesis` do navegador para ler o conteúdo pedagógico principal da rota atual em português do Brasil. Menus, badges, fontes, botões e campos de resposta são ignorados; títulos e instruções recebem pausas maiores, símbolos comuns são convertidos para palavras e a velocidade padrão é 0,9. A disponibilidade da voz e a qualidade do áudio dependem do navegador e do dispositivo; esse recurso complementa, mas não substitui, um leitor de tela.
