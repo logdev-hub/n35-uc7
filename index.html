@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Site-caderno interativo da UC7 — Mapear e estimar custos logísticos.">
+  <title>UC7 · Mapear e estimar custos logísticos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#app">Pular para o conteúdo</a>
+  <nav class="navbar navbar-expand-lg site-nav sticky-top" aria-label="Navegação principal">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio"><span class="brand-mark">UC7</span> LOG N35</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
+      <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="mainMenu">
+        <div class="offcanvas-header"><h2 class="offcanvas-title h5">Navegação</h2><button class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#mainMenu" aria-label="Fechar"></button></div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#conceitos">Conceitos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cases">Cases</a></li>
+            <li class="nav-item"><a class="nav-link" href="#formulas">Fórmulas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#calculadoras">Calculadoras</a></li>
+            <li class="nav-item"><a class="nav-link" href="#glossario">Glossário</a></li>
+            <li class="nav-item"><a class="nav-link" href="#biblioteca">Biblioteca</a></li>
+            <li class="nav-item"><a class="nav-link" href="#logi-a">LOGI-A</a></li>
+          </ul>
+          <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search" id="search-form"><label class="visually-hidden" for="global-search">Pesquisar na UC7</label><input class="form-control form-control-sm" id="global-search" type="search" placeholder="Pesquisar" aria-label="Pesquisar na UC7"><button class="btn btn-orange btn-sm ms-2" type="submit" aria-label="Pesquisar"><i class="bi bi-search"></i></button></form>
+          <div class="access-tools ms-lg-3 mt-3 mt-lg-0"><button class="btn btn-outline-light btn-sm" data-action="font-up" aria-label="Aumentar texto" title="Aumentar texto">A+</button><button class="btn btn-outline-light btn-sm" data-action="contrast" aria-label="Ativar alto contraste" aria-pressed="false" title="Ativar alto contraste"><i class="bi bi-circle-half"></i></button></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main id="app" role="main" tabindex="-1"></main>
+  <footer class="footer"><div class="container d-flex flex-wrap justify-content-between gap-3"><div><strong>UC7 · Mapear e estimar custos logísticos</strong><br><span class="small">Curso Técnico em Logística · Turma LOG N35 · Senac Guarulhos</span></div><div class="small text-lg-end">Docente: Leandro Pereira<br>Site-caderno estático · progresso apenas neste navegador</div></div></footer>
+  <div id="toast" class="toast-local" role="status" aria-live="polite" hidden></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
